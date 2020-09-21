@@ -1,0 +1,36 @@
+//
+// This file is meant to regroup your design customizations. For example, doing
+// this will separate your footer with a dotted border using your primary color.
+//
+// footer {
+//     border-top: 5px dotted theme-color('primary');
+// }
+//
+
+
+//HEADER
+
+#top_menu{
+    margin: 0 !important;
+}
+
+//CONTENT
+
+.brand_carousel .owl-nav button.owl-prev i, .brand_carousel .owl-nav button.owl-next i {
+    font-size: 4.0rem !important;
+}
+
+.te_brand_slider {
+    background-color: #fff !important;
+}
+
+.te_slider_title:before {
+    background-color: #fff !important;
+}
+
+
+//FOOTER
+
+h5.footer-sub-title::before {
+    display:none !important;
+}
