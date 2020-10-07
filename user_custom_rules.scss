@@ -10,27 +10,94 @@
 
 //HEADER
 
-#top_menu{
-    margin: 0 !important;
+#top {
+    margin: 0px auto !important;
+    width: 100% !important;
+    max-width: 1400px !important;
+    
+    & > nav > div.container{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
+#top_menu{
+    margin: 0 !important;
+    
+    & > li >  a.nav-link {
+        color: $misenso-black !important;
+        font-family: inherit;
+    }
+}
+
+
+#top_menu_collapse{
+     & li.dropdown .dropdown-menu:not(.te_custom_submenu).o_mega_menu {
+         width: 60% !important;
+        left: -1% !important;
+        padding: 0px !important;
+        margin-left: 12px !important;
+    }
+}
+
+#top_menu_collapse_clone{
+         & li.dropdown .dropdown-menu:not(.te_custom_submenu).o_mega_menu {
+             width: 60% !important;
+             left: 6% !important;
+             padding: 0px !important;
+             margin-left: 12px !important;
+    }
+}
+
+header.affixed{
+    top: inherit !important;
+}
+
+
+//GENERAL ELEMENTS
+
+select {
+    border: none !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    -ms-appearance: none !important; /* get rid of default appearance for IE8, 9 and 10*/
+}
+
+.te_theme_button,
+button{
+    border-radius: 20px !important;
+}
+
+
+
 //CONTENT
+
+
+
+.btn_sand {
+    color: #212529 !important;
+    background-color: #faf6eb !important;
+    border-color: #faf6eb !important;
+    margin-bottom: -200px !important; 
+    margin-right: 30px !important; 
+    
+}
 
 .brand_carousel .owl-nav button.owl-prev i, .brand_carousel .owl-nav button.owl-next i {
     font-size: 4.0rem !important;
 }
 
-.te_brand_slider {
-    background-color: #fff !important;
-}
-
-.te_slider_title:before {
-    background-color: #fff !important;
+.te_brand_slider, .te_slider_title:before {
+    background-color: $misenso-white !important;
 }
 
 
 //FOOTER
 
 h5.footer-sub-title::before {
-    display:none !important;
+    display: none !important;
 }
