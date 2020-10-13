@@ -73,18 +73,28 @@ button{
 }
 
 
-body, h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, span {
   font-family: 'MisensoFontBlack', "Rubik", "Odoo Unicode Support Noto", sans-serif !important;
 }
 
-p, h6.o_wsale_products_item_title, span.oe_currency_value{
+body, p, h6.o_wsale_products_item_title, span.oe_currency_value{
   font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif !important;
 }
 
 
+.btn{
+    text-transform: none;
+}
+
 //CONTENT
 
 
+#homepage-4col .o_we_custom_image {
+     max-width: 100px;    
+}
+#homepage-4col .te_4_col_section {
+    min-height: 580px;
+}
 
 .btn_sand {
     color: #212529 !important;
