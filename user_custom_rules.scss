@@ -10,15 +10,17 @@
 
 //HEADER
 
-#top {
-    margin: 0px auto !important;
-    width: 100% !important;
-    max-width: 1400px !important;
-    
-    & > nav > div.container{
+@include media-breakpoint-only(lg) {
+    #top {
+        margin: 0px auto !important;
         width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        max-width: 1400px !important;
+
+        & > nav > div.container{
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
     }
 }
 
@@ -54,8 +56,16 @@ header.affixed{
     top: inherit !important;
 }
 
+a#o_logout{
+    visibility: hidden;
+    display: none;
+}
 
 //GENERAL ELEMENTS
+
+input, textarea {
+    border: none !important;
+}
 
 select {
     border: none !important;
@@ -67,42 +77,84 @@ select {
     -ms-appearance: none !important; /* get rid of default appearance for IE8, 9 and 10*/
 }
 
-.te_theme_button,
-button{
-    border-radius: 20px !important;
-}
-
 
 h1, h2, h3, h4, h5, h6, span {
-  font-family: 'MisensoFontBlack', "Rubik", "Odoo Unicode Support Noto", sans-serif !important;
+  font-family: 'MisensoFontBlack', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
-body, p, h6.o_wsale_products_item_title, span.oe_currency_value{
-  font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif !important;
+body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
+  font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
 
 .btn{
-    text-transform: none;
+    text-transform: none !important;
 }
 
 //CONTENT
 
 
-#homepage-4col .o_we_custom_image {
-     max-width: 100px;    
+.misenso-4col .o_we_custom_image {
+     max-width: 100px !important;
 }
-#homepage-4col .te_4_col_section {
-    min-height: 580px;
+
+.misenso-4col .te_4_col_section {
+    min-height: 450px;
+}
+
+.misenso-4col a{
+    color: $misenso-green;
+}
+
+.ubermisenso-4col .o_we_custom_image {
+     max-width: 100px !important;
+}
+
+.ubermisenso-4col .te_4_col_section {
+    min-height: 450px;
+}
+
+.ubermisenso-4col a{
+    color: $misenso-green;
+}
+
+.span-link:hover{
+    border-bottom: 2px solid #237d50;
+    padding-bottom: 3px;
+}
+
+.hero-image-home .btn_sand{
+    margin: 0 30px -200px 30px;
+    width: 150px;    
+}
+
+@include media-breakpoint-only(xs) {
+  .hero-image-home .btn_sand {
+    margin: 0 7px;
+        width: 125px;
+  }
+  .s_btn .btn + .btn {
+    margin-left: 0rem;
+  }
 }
 
 .btn_sand {
     color: #212529 !important;
     background-color: #faf6eb !important;
     border-color: #faf6eb !important;
-    margin-bottom: -200px !important; 
-    margin-right: 30px !important; 
-    
+}
+
+
+.btn_sand:hover {
+    border-color: #237d50 !important;
+    border-style: solid !important;
+    background-color: #237d50 !important;
+    color: #ffffff !important;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -ms-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .brand_carousel .owl-nav button.owl-prev i, .brand_carousel .owl-nav button.owl-next i {
@@ -111,6 +163,11 @@ body, p, h6.o_wsale_products_item_title, span.oe_currency_value{
 
 .te_brand_slider, .te_slider_title:before {
     background-color: $misenso-white !important;
+}
+
+.te_company_details{
+    display: none;
+    visibility: hidden;
 }
 
 
