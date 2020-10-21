@@ -10,19 +10,16 @@
 
 //HEADER
 
-@include media-breakpoint-only(lg) {
-    #top {
-        margin: 0px auto !important;
-        width: 100% !important;
-        max-width: 1400px !important;
-
-        & > nav > div.container{
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-    }
+#misenso_nav {
+    background-color: $misenso-sand !important;
 }
+
+.te_header_4_search {
+  margin-right: 13px;
+  visibility: hidden !important;
+  display: none !important;
+}
+
 
 #top_menu{
     margin: 0 !important;
@@ -60,6 +57,63 @@ a#o_logout{
     visibility: hidden;
     display: none;
 }
+
+#wrapwrap > header:not(.o_header_affix) {
+    top: 48px !important;
+}
+
+#wrapwrap.o_header_overlay > header:not(.o_header_affix) {
+    position: unset;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+//responsive rules
+@media (max-width: 767px) {
+  .te_header_navbar {
+    background: $misenso-sand !important;
+  }
+
+  #wrapwrap > header:not(.o_header_affix) {
+    top: 0 !important;
+    position: absolute !important;
+    left: 0;
+    bottom: auto;
+    right: 0;
+  }
+
+  .te_header_before_overlay{
+    position: relative;
+    top: 35px;
+    z-index: 996;
+    margin-bottom: 35px;
+  }
+  
+  .a-service-login{
+    margin-top: 10px;
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+      width: 25px;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+    #top {
+        margin: 0px auto !important;
+        width: 100% !important;
+        max-width: 1400px !important;
+
+        & > nav > div.container{
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+}
+
 
 //GENERAL ELEMENTS
 
@@ -103,7 +157,7 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
 }
 
 .misenso-4col a{
-    color: $misenso-green;
+    color: $misenso-forest;
 }
 
 .ubermisenso-4col .o_we_custom_image {
@@ -115,7 +169,7 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
 }
 
 .ubermisenso-4col a{
-    color: $misenso-green;
+    color: $misenso-forest;
 }
 
 .span-link:hover{
