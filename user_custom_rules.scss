@@ -14,12 +14,12 @@
     background-color: $misenso-sand !important;
 }
 
-.te_header_4_search {
-  margin-right: 13px;
+.te_header_4_search,
+.te_wish_icon_head,
+.te_cart_icon_head {
   visibility: hidden !important;
   display: none !important;
 }
-
 
 #top_menu{
     margin: 0 !important;
@@ -147,7 +147,6 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
 
 //CONTENT
 
-
 .misenso-4col .o_we_custom_image {
      max-width: 100px !important;
 }
@@ -159,6 +158,7 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
 .misenso-4col a{
     color: $misenso-forest;
 }
+
 
 .ubermisenso-4col .o_we_custom_image {
      max-width: 100px !important;
@@ -172,6 +172,18 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
     color: $misenso-forest;
 }
 
+.hoergeraete-4col .o_we_custom_image {
+     max-width: 100px !important;
+}
+
+.hoergeraete-4col .te_4_col_section {
+    min-height: 450px;
+}
+
+.hoergeraete-4col a{
+    color: $misenso-forest;
+}
+
 .span-link:hover{
     border-bottom: 2px solid #237d50;
     padding-bottom: 3px;
@@ -181,6 +193,30 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
     margin: 0 30px -200px 30px;
     width: 150px;    
 }
+
+@include media-breakpoint-down(md) { 
+    .misenso-4col section.pb40,
+    .misenso-4col section div.pb32,
+    .hoergeraete-4col section.pb40,
+    .hoergeraete-4col section div.pb32 {
+        padding-bottom: 0px !important;
+    }
+}
+
+@include media-breakpoint-down(md) { 
+    .s_banner{ 
+        padding-bottom: 0 !important;
+        
+        div.container{
+            width: 75%;
+        }
+        
+        .bg-beta{
+            background-color: rgba(250, 246, 235, 0.9) !important;
+        }
+    }
+}
+
 
 @include media-breakpoint-only(xs) {
   .hero-image-home .btn_sand {
@@ -226,6 +262,30 @@ body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value{
 
 @media (min-width: 992px) and (max-width: 1340px) {
   .misenso-4col section div div.te_4_col_icon {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-bottom: 35px;
+
+    &:nth-child(1), &:nth-child(3){
+        margin-left: 10%;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1530px) {
+  .ubermisenso-4col section div div.te_4_col_icon {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-bottom: 35px;
+
+    &:nth-child(1), &:nth-child(3){
+        margin-left: 10%;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1560px) {
+  .hoergeraete-4col section div div.te_4_col_icon {
     flex: 0 0 40%;
     max-width: 40%;
     margin-bottom: 35px;
