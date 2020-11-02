@@ -124,9 +124,18 @@ select {
     -ms-appearance: none !important; /* get rid of default appearance for IE8, 9 and 10*/
 }
 
-html[data-view-xmlid="website_sale.products"] select{
+html[data-view-xmlid="website_sale.products"] select,
+html[data-view-xmlid="website_sale.product"] select,
+html[data-view-xmlid="website_sale.products"] input,
+html[data-view-xmlid="website_sale.product"] input,
+html[data-view-xmlid="website_sale.products"] textarea,
+html[data-view-xmlid="website_sale.product"] textarea,
+html[data-view-xmlid="website_sale.cart"] input,
+html[data-view-xmlid="website_sale.cart"] textarea{
     border: 1px solid #ced4da !important; 
 }
+
+
 
 h1, h2, h3, h4, h5, h6, span {
     font-family: 'MisensoFontBlack', "Rubik", "Odoo Unicode Support Noto", sans-serif;
