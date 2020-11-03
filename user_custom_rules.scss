@@ -110,12 +110,11 @@ a#o_logout{
 
 //GENERAL ELEMENTS
 
-input, textarea {
+select, input, textarea {
     border: none !important;
 }
 
 select {
-    border: none !important;
     -webkit-box-sizing: border-box !important;
     -moz-box-sizing: border-box !important;
     -webkit-appearance: none !important;
@@ -124,17 +123,19 @@ select {
     -ms-appearance: none !important; /* get rid of default appearance for IE8, 9 and 10*/
 }
 
-html[data-view-xmlid="website_sale.products"] select,
-html[data-view-xmlid="website_sale.product"] select,
-html[data-view-xmlid="website_sale.products"] input,
-html[data-view-xmlid="website_sale.product"] input,
-html[data-view-xmlid="website_sale.products"] textarea,
-html[data-view-xmlid="website_sale.product"] textarea,
-html[data-view-xmlid="website_sale.cart"] input,
-html[data-view-xmlid="website_sale.cart"] textarea{
-    border: 1px solid #ced4da !important; 
+.shop-wrap, .product-wrap{
+    background: white !important;    
+    
+    select, input, textarea{
+            border: 1px solid #ced4da !important; 
+    }
 }
 
+.cart-wrap{
+        select, input, textarea{
+            border: 1px solid #ced4da !important; 
+    }
+}
 
 
 h1, h2, h3, h4, h5, h6, span {
