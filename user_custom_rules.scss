@@ -15,7 +15,6 @@
 }
 
 #top_menu{
-    margin: 0 !important;
     
     & > li >  a.nav-link {
         color: $misenso-black !important;
@@ -142,11 +141,12 @@ h1, h2, h3, h4, h5, h6, span {
     font-family: 'MisensoFontBlack', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
-body, p, div.alert, h6.o_wsale_products_item_title, span.oe_currency_value {
-    font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
-}
-
-div.te_attr_title span, div.price_filter_head span {
+body,p, div.alert, h6.o_wsale_products_item_title,
+span.oe_currency_value,
+.product_price span,
+div.te_attr_title span, div.price_filter_head span,
+#wsale_products_categories_collapse ul li a.nav-link span,
+.te_phone_icon_head span{
     font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
