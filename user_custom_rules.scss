@@ -41,6 +41,16 @@
     }
 }
 
+.s_mega_menu_multi_menus div.text-center {
+    h4, nav a {
+        color: $misenso-black !important;
+    }
+    
+    nav a:hover{
+        color: $misenso-forest !important;
+    }
+}
+
 header.affixed{
     top: inherit !important;
 }
@@ -63,6 +73,13 @@ a#o_logout{
 }
 
 //responsive rules
+
+@media (min-width: 768px) {
+    .o_mega_menu{
+        background: $misenso-sand;
+    }
+}
+
 @media (max-width: 767px) {
   .te_header_navbar {
     background: $misenso-sand !important;
@@ -150,6 +167,10 @@ div.te_attr_title span, div.price_filter_head span,
     font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
+#wsale_products_categories_collapse ul li:not(:last-child){
+    display: none;
+    visibility: hidden;
+}
 
 h2, .btn{
     text-transform: none !important;
