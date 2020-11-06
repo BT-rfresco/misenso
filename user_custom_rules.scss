@@ -15,6 +15,7 @@
 }
 
 #top_menu{
+    margin: 0 !important;
     
     & > li >  a.nav-link {
         color: $misenso-black !important;
@@ -25,9 +26,8 @@
 
 #top_menu_collapse{
      & li.dropdown .dropdown-menu:not(.te_custom_submenu).o_mega_menu {
-         width: 60% !important;
-        left: -1% !important;
-        padding: 0px !important;
+         width: 70% !important;
+        left: 6% !important;
         margin-left: 12px !important;
     }
 }
