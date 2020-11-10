@@ -291,6 +291,13 @@ h2, .btn{
     visibility: hidden;
 }
 
+#products_grid .te_shop_grid .te_product_info .o_wsale_product_btn .te_quick_view {
+    visibility: hidden !important;
+    display: none !important;  
+    
+}
+
+
 @media (min-width: 992px) and (max-width: 1340px) {
   .misenso-4col section div div.te_4_col_icon {
     flex: 0 0 40%;
