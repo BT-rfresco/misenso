@@ -23,7 +23,6 @@
     }
 }
 
-
 #top_menu_collapse{
      & li.dropdown .dropdown-menu:not(.te_custom_submenu).o_mega_menu {
          width: 70% !important;
@@ -167,10 +166,11 @@ div.te_attr_title span, div.price_filter_head span,
     font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
-#wsale_products_categories_collapse ul li:not(:last-child){
+#wsale_products_categories_collapse > ul.te_shop_ctg_list > li:not(:last-child){
     display: none;
     visibility: hidden;
 }
+
 
 h2, .btn{
     text-transform: none !important;
