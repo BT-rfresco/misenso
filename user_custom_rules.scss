@@ -178,6 +178,14 @@ h2, .btn{
 
 //CONTENT
 
+.info-icon-price{
+    color: $misenso-forest;
+    
+    &:hover{
+        color:#1b5f3d !important;
+    }
+}
+
 .misenso-4col .o_we_custom_image {
     max-width: 100px !important;
 }
