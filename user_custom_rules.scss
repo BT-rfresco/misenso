@@ -166,11 +166,13 @@ div.te_attr_title span, div.price_filter_head span,
     font-family: 'MisensoFontBook', "Rubik", "Odoo Unicode Support Noto", sans-serif;
 }
 
-#wsale_products_categories_collapse > ul.te_shop_ctg_list > li:not(:last-child){
-    display: none;
-    visibility: hidden;
+#wsale_products_categories_collapse > ul.te_shop_ctg_list > li:nth-child(1),
+#wsale_products_categories_collapse > ul.te_shop_ctg_list > li:nth-child(2),
+#o_shop_collapse_category li i + a,
+#o_shop_collapse_category li .nav-hierarchy li a:first-child{
+    display: none !important;
+    visibility: hidden !important;
 }
-
 
 h2, .btn{
     text-transform: none !important;
@@ -184,6 +186,10 @@ h2, .btn{
     &:hover{
         color:#1b5f3d !important;
     }
+}
+
+.t_wish_table tbody .te_fav_product_main{
+	background: white;
 }
 
 .misenso-4col .o_we_custom_image {
@@ -303,6 +309,10 @@ h2, .btn{
     visibility: hidden !important;
     display: none !important;  
     
+}
+
+#products_grid .te_shop_grid .te_product_info .o_wsale_product_btn .o_add_wishlist:disabled {
+     color: #237d50 !important;
 }
 
 
